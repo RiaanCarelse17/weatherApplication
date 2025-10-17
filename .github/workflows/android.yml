@@ -11,6 +11,9 @@ jobs:
     name: Build and Test
     runs-on: ubuntu-latest
 
+    env:
+      ZU_PLO_API_KEY: ${{ secrets.ZU_PLO_API_KEY }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
